@@ -31,7 +31,7 @@ class App (BaseApp):
 
             cmd = ['ansible-playbook', tmplfd.name]
             cmd.extend(self.build_command_line(args))
-            subprocess.check_call(cmd)
+            subprocess.call(cmd)
 
 
 def main():
