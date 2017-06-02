@@ -1,3 +1,4 @@
+import os
 import argparse
 import jinja2
 import jinja2.loaders
@@ -6,6 +7,7 @@ class BaseApp (object):
     def __init__(self):
         self._env = jinja2.Environment(
             loader=jinja2.loaders.PackageLoader('ansible_toolbox', 'templates'))
+        os.environ["ANSIBLE_RETRY_FILES_ENABLED"] = "False"
 
     def get_template(self, template):
         return self._env.get_template(template)
