@@ -72,8 +72,12 @@ The following additional options are simply proxies to the equivalent
 
 ## Installation
 
-You can install `ansible-toolbox` directly from GitHub like this:
+You can install `ansible-toolbox` directly from Pypi like this:
 
+    pip install ansible-toolbox
+
+Or you can install it from Github :
+    
     pip install git+https://github.com/larsks/ansible-toolbox
 
 If you have a copy of the repository, you can run:
