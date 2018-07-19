@@ -34,6 +34,7 @@ class BaseApp (object):
                        default=[])
         p.add_argument('--connection', '-c')
         p.add_argument('--check', '-C', action='store_true')
+        p.add_argument('--diff', '-D', action='store_true')
 
         g = p.add_argument_group('Inventory')
         g.add_argument('-i', '--inventory')
@@ -66,6 +67,9 @@ class BaseApp (object):
 
         if args.check:
             cmd.append('--check')
+
+        if args.diff:
+            cmd.append('--diff')
 
         if args.become:
             cmd.append('--become')

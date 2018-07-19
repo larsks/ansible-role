@@ -61,6 +61,7 @@ The following additional options are simply proxies to the equivalent
 `ansible-playbook` options:
 
 - `--check`, `-C`
+- `--diff`, `-D`
 - `--verbose`, `-v`
 - `--sudo`, `-s`
 - `--become`, `-b`
