@@ -48,6 +48,11 @@ Of course, you can use filters to reformat that:
         "netmask": "255.255.255.0",
         "network": "192.168.1.0"
     }
+    
+Use single quotes only for string literals inside template:
+
+    $ ansible-eval "{{ 'yes' | bool }}" 
+    True
 
 ## Common options
 
